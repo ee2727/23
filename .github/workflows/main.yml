@@ -1,13 +1,13 @@
 name: run a0323
 on:
-  push: 
+  push:
   schedule:
-  - crone: "0 0 * * *"
-jobs: 
-  build: 
-    name: run python
+  - cron: "0 0 * * *"
+jobs:
+  build:
+    name: run python build
     runs-on: ubuntu-latest
-    steps: 
+    steps:
     - uses: actions/checkout@v2
     - name: Run python
       run: |
