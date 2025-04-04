@@ -37,4 +37,11 @@ while True :
     print(f'你花了{guess_count}次猜到正確答案'）
     
 
+
+while True:
+    play()
+    
+    again = input('你是否要再玩一次？請輸入Y繼續遊戲:')
+    if again.upoer() != 'Y':
+        break 
  
